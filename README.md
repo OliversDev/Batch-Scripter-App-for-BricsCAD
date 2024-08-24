@@ -26,6 +26,6 @@ If an error occurs during any operation prior to running a script, an error mess
 5. Run "OW:BatchScripter" command.
 
 ## Details
-Windows local temporary folder is by default in C:\Users\%username%\AppData\Local\Temp
-Script file name is "BatchScripter_Script_" & GUID & ".scr"
-Error Log file is saved to user's local temporary directory with a file name of "BatchScripter_ErrorLog_" & GUID & ".log"
+<br>Windows local temporary folder is by default in C:\Users\%username%\AppData\Local\Temp</br>
+<br>Script file name is "BatchScripter_Script_" & GUID & ".scr"</br>
+<br>Error Log file is saved to user's local temporary directory with a file name of "BatchScripter_ErrorLog_" & GUID & ".log"</br>
