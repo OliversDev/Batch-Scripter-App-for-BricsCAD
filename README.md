@@ -15,6 +15,11 @@ Remove Drawings Button: Removes selected drawing files from the list.
 Browse Script Button: Opens a file dialog to select a script file. Script file can be saved in .scr or .txt file format. 
 Run Script Button: Executes the selected script on all listed drawings.
 
+![alt text](./Images/BatchScripterUI.png?raw=true)
+<br> </br>
+![alt text](./Images/BatchScripterUIExample.png?raw=true)
+<br> </br>
+
 ## Error Handling
 If an error occurs during any operation prior to running a script, an error message will be displayed with details about the issue. Common errors include file access issues and invalid file formats.
 
@@ -26,6 +31,9 @@ If an error occurs during any operation prior to running a script, an error mess
 5. Run "OW:BatchScripter" command.
 
 ## Details
+I recommend running commands in this format: <br>'(command "Name" ...)'</br> <br>for example (command "ZOOM" "E")</br>
+<br>instead of</br> <br>Zoom</br> <br>Extent</br>
+<br>Avoid trailing spaces or break lines as this may retrigger the rerun of the Batch Scripter command.</br>
 <br>Windows local temporary folder is by default in C:\Users\%username%\AppData\Local\Temp</br>
 <br>Script file name is "BatchScripter_Script_" & GUID & ".scr"</br>
 <br>Error Log file is saved to user's local temporary directory with a file name of "BatchScripter_ErrorLog_" & GUID & ".log"</br>
