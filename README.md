@@ -34,6 +34,6 @@ If an error occurs during any operation prior to running a script, an error mess
 I recommend running commands in this format: <br>'(command "Name" ...)'</br> <br>for example (command "ZOOM" "E")</br>
 <br>instead of</br> <br>Zoom</br> <br>Extent</br>
 <br>Avoid trailing spaces or break lines as this may retrigger the rerun of the Batch Scripter command.</br>
-<br>Windows local temporary folder is by default in C:\Users\%username%\AppData\Local\Temp</br>
+<br>Windows local temporary folder is by default in C:\Users\\%username%\AppData\Local\Temp</br>
 <br>Script file name is "BatchScripter_Script_" & GUID & ".scr"</br>
 <br>Error Log file is saved to user's local temporary directory with a file name of "BatchScripter_ErrorLog_" & GUID & ".log"</br>
