@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BricsCAD Batch v24")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("See https://github.com/Owack/BricsCAD-Batch-Scripter")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BricsCAD Batch v24")]
-[assembly: AssemblyCopyright("Copyright ©  2024")]
+[assembly: AssemblyCompany("Oliver Wackenreuther")]
+[assembly: AssemblyProduct("OW BricsCAD Batch Scripter v24")]
+[assembly: AssemblyCopyright("Copyright © Oliver Wackenreuther 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
