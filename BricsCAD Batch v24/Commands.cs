@@ -4,7 +4,7 @@ using Teigha.Runtime;
 
 namespace BricsCADDialogLibrary
 {
-    public class BricsCADDialog
+    public class BatchScripterDialog
     {
         [CommandMethod("OW:BatchScripter")]
         public void BatchScripter()

@@ -68,12 +68,7 @@ namespace BricsCADDialogLibrary
 
         private void btnBrowseScript_Click(object sender, EventArgs e)
         {
-            BrowseScriptFile(false);
-        }
-
-        private void BtnBrowseBuiltInScripts_Click(object sender, EventArgs e)
-        {
-            BrowseScriptFile(true);
+            BrowseScriptFile();
         }
 
         private async void btnRunScript_Click(object sender, EventArgs e)
@@ -164,31 +159,21 @@ namespace BricsCADDialogLibrary
             }
         }
 
-        private void BrowseScriptFile(bool useBuiltInFolder)
+        private void BrowseScriptFile()
         {
             try
             {
-                string initialDirectory = useBuiltInFolder ? Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "BuiltInScripts") : string.Empty;
-
-                if (!useBuiltInFolder || Directory.Exists(initialDirectory))
+                using (OpenFileDialog openFileDialog = new OpenFileDialog
                 {
-                    using (OpenFileDialog openFileDialog = new OpenFileDialog
+                    Filter = "Script files (*.scr;*.txt)|*.scr;*.txt|All files (*.*)|*.*",
+                    Multiselect = false
+                })
+                {
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        InitialDirectory = initialDirectory,
-                        Filter = "Script files (*.scr;*.txt)|*.scr;*.txt|All files (*.*)|*.*",
-                        Multiselect = false
-                    })
-                    {
-                        if (openFileDialog.ShowDialog() == DialogResult.OK)
-                        {
-                            string fileContent = File.ReadAllText(openFileDialog.FileName);
-                            textBoxContents.AppendText(fileContent + Environment.NewLine);
-                        }
+                        string fileContent = File.ReadAllText(openFileDialog.FileName);
+                        textBoxContents.AppendText(fileContent + Environment.NewLine);
                     }
-                }
-                else
-                {
-                    MessageBox.Show("The built-in scripts folder does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -228,18 +213,12 @@ namespace BricsCADDialogLibrary
 
             foreach (Control control in this.Controls)
             {
-                //if (control is Button || control is CheckBox || control is Label || control is TextBox || control is ListBox)
                 if (control is Button || control is TextBox || control is ListBox)
                 {
                     control.BackColor = System.Drawing.Color.FromArgb(45, 45, 48);
                     control.ForeColor = System.Drawing.Color.White;
                 }
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void linkLblFootnote_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
