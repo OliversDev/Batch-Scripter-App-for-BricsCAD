@@ -2,7 +2,7 @@
 using Bricscad.Runtime;
 using Teigha.Runtime;
 
-namespace BricsCADDialogLibrary
+namespace BatchScripter
 {
     public class BatchScripterDialog
     {

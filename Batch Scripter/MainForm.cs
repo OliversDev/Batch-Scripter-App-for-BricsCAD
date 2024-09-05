@@ -7,7 +7,7 @@ using Bricscad.ApplicationServices;
 using Bricscad.EditorInput;
 using Teigha.DatabaseServices;
 
-namespace BricsCADDialogLibrary
+namespace BatchScripter
 {
     public partial class MainForm : Form
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{7BFA8EFD-A1CD-4504-878D-C304393BCD50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OW_BricsCAD_Batch_Scripter_v24</RootNamespace>
-    <AssemblyName>OW BricsCAD Batch Scripter v24</AssemblyName>
+    <RootNamespace>Batch_Scripter</RootNamespace>
+    <AssemblyName>Batch Scripter App for BricsCAD</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OW BricsCAD Batch Scripter v24", "BricsCAD Batch v24\OW BricsCAD Batch Scripter v24.csproj", "{7BFA8EFD-A1CD-4504-878D-C304393BCD50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Batch Scripter App for BricsCAD", "Batch Scripter\Batch Scripter App for BricsCAD.csproj", "{7BFA8EFD-A1CD-4504-878D-C304393BCD50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
