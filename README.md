@@ -1,4 +1,4 @@
-# Batch Scripter for BricsCAD v24
+# Batch Scripter App for BricsCAD v24
 ## Overview
 The Batch Scripter application allows users to automate the execution of scripts on multiple drawing files. This tool is designed to streamline repetitive tasks in BricsCAD by running scripts across selected drawings efficiently. It creates a script file (.scr) in user's local temporary folder and then run it in the active drawing. It then loops through each drawing file and runs the user defined script.
 
