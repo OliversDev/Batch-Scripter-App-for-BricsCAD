@@ -25,7 +25,7 @@ Run Script Button: Executes the selected script on all listed drawings.</br>
 If an error occurs during any operation prior to running a script, an error message will be displayed with details about the issue. Common errors include file access issues and invalid file formats.
 
 ## Installation
-1. Download the latest released DLL file found in https://github.com/Owack/BricsCAD-Batch-Scripter/tree/master/Release
+1. Download the latest released DLL file found in this repository in the "Released" folder.
 2. Move the file to a desired directory.
 3. Open BricsCAD and run "NETLOAD" command.
 4. Browse to the DLL file and load it.
